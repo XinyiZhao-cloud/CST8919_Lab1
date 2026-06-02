@@ -52,6 +52,16 @@ async def profile():
     
     return render_template('profile.html', user=user)
 
+@app.route('/protected')
+async def protected():
+    """Protected page - only authenticated users can access"""
+    user = await auth0.get_user(g.store_options)
+
+    if not user:
+        return redirect(url_for('login'))
+
+    return render_template('protected.html', user=user)
+
 @app.route('/logout')
 async def logout():
     """Logout and redirect to Auth0 logout"""
