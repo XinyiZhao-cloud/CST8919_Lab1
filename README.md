@@ -23,6 +23,22 @@ Auth0 acts as the Identity Provider (IdP), while the Flask application acts as t
 
 ---
 
+## Video Demonstration
+
+**YouTube Video:**
+
+https://youtu.be/S1l01S-nJuw 
+
+The video demonstrates:
+
+- Auth0 login
+- Auth0 logout
+- Protected route access
+- Code walkthrough
+- Key concepts learned
+
+---
+
 ## Features
 
 ### Authentication
@@ -101,7 +117,11 @@ pip install -r requirements.txt
 
 Example:
 ```env
-AUTH0_CLIENT_ID=YOUR_CLIENT_ID AUTH0_CLIENT_SECRET=YOUR_CLIENT_SECRET AUTH0_DOMAIN=YOUR_DOMAIN APP_SECRET_KEY=YOUR_SECRET_KEY AUTH0_REDIRECT_URI=http://127.0.0.1:5000/callback 
+AUTH0_CLIENT_ID=YOUR_CLIENT_ID 
+AUTH0_CLIENT_SECRET=YOUR_CLIENT_SECRET 
+AUTH0_DOMAIN=YOUR_DOMAIN 
+APP_SECRET_KEY=YOUR_SECRET_KEY 
+AUTH0_REDIRECT_URI=http://127.0.0.1:5000/callback 
 ```
 ### 5. Configure Auth0 Application Settings
 
@@ -154,30 +174,6 @@ python app.py
 
 - Logged-in users can access the page.
 - Non-authenticated users are redirected to the login page.
-
----
-
-## GitHub Repository
-
-**Repository URL:**
-
-`https://github.com/XinyiZhao-cloud/CST8919_Lab1/tree/main`
-
----
-
-## Video Demonstration
-
-**YouTube Video:**
-
-`PASTE_YOUTUBE_LINK_HERE `
-
-The video demonstrates:
-
-- Auth0 login
-- Auth0 logout
-- Protected route access
-- Code walkthrough
-- Key concepts learned
 
 ---
 
